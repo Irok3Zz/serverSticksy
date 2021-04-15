@@ -19,6 +19,7 @@ namespace serverSticksy
 
         static void Main(string[] args)
         {
+            Console.WriteLine("Server started");
             server = new Server(new IPEndPoint(IPAddress.Parse(ip), port));
             server.Listen();
 
