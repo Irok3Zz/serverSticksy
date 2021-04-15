@@ -11,7 +11,7 @@ namespace StickServerIntegration
      class StickServerIntegration
     {
         StiksyDataBase DBquery;
-        StickServerIntegration(StiksyDataBase constr)
+        public StickServerIntegration(StiksyDataBase constr)
         {
             DBquery = constr;
         }
