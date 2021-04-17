@@ -27,5 +27,9 @@ namespace StickServerIntegration
         {
             DBquery.DeleteStick(stickId);
         }
+        public void AddFriend(GetUsers addFriend)
+        {
+            AnswerListUser answerListUser = new AnswerListUser(DBquery.GetFriends());
+        }
     }
 }
