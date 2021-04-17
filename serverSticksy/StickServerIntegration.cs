@@ -29,7 +29,7 @@ namespace StickServerIntegration
         }
         public void AddFriend(GetUsers addFriend)
         {
-            AnswerListUser answerListUser = new AnswerListUser(DBquery.GetFriends());
+            return new AnswerListUser(DBquery.GetFriends());
         }
     }
 }
