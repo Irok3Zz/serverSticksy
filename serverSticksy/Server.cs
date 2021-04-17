@@ -89,11 +89,11 @@ namespace serverSticksy
                             }
                         }
                         #endregion
-                        #region AddFriendsToStick(GetUSers) *не доработано*
-                        //if (data is GetUsers)
-                        //{
-                        //    Transfer.SendData(client, StickServer.)
-                        //}
+                        #region AddFriendsToStick(GetUSers)
+                        if (data is GetUsers)
+                        {
+                            Transfer.SendData(client, StickServer.AddFriend(data as GetUsers));
+                        }
                         #endregion
                     }
                     catch
